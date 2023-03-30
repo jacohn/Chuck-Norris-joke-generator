@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><meta chars="UTF-8">
+        <title>Chuck Norris Jokes</title>
+    </head>
+    <body>
+        <hello universe>
+            <div id="name"></div>
+            <div id="joke"></div>
+            <img id="name"></img>
+            <script>
+                fetch("https://api.chucknorris.io/jokes/random")
+                .then((data)=>{
+                    return data.json();   
+                }).then((data)=>{
+                    console.log(data);
+                    document.getElementById("joke").innerHTML=data.value;
+                })
+
+            </script>
+        </hello>
+
+
+    </body>
+</html>
